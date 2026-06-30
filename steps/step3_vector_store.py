@@ -10,7 +10,7 @@ os.environ["ZHIPUAI_API_KEY"] = os.getenv("ZHIPU_API_KEY")
 
 def build_vector_store():
     # 2. 重新加载和切片文档（复用第二步的逻辑）
-    loader = TextLoader("../sample_company_policy.txt", encoding="utf-8")
+    loader = TextLoader("sample_company_policy.txt", encoding="utf-8")
     documents = loader.load()
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=150, chunk_overlap=30)
     chunks = text_splitter.split_documents(documents)

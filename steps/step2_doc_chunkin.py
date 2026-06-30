@@ -42,4 +42,4 @@ def process_document(file_path):
         print(f"元数据: {chunk.metadata}")
         print("-" * 50)
 if __name__ == "__main__":
-    process_document("../sample_company_policy.txt")
+    process_document("sample_company_policy.txt")
